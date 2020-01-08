@@ -140,8 +140,8 @@ repositories {
 }
 
 dependencies {
-    compile group: 'nc.opt.core', name: 'opt-logging', version: '1.2.1'
-    compile group: 'nc.opt.core.search', name: 'opt-elasticsearch', version: opt_elasticsearch_version
+  //  compile group: 'nc.opt.core', name: 'opt-logging', version: '1.2.1'
+ //   compile group: 'nc.opt.core.search', name: 'opt-elasticsearch', version: opt_elasticsearch_version
     compile "io.github.jhipster:jhipster:${jhipster_server_version}"
     compile "io.dropwizard.metrics:metrics-core:${dropwizard_metrics_version}"
     compile "io.dropwizard.metrics:metrics-jvm:${dropwizard_metrics_version}"
@@ -190,7 +190,7 @@ dependencies {
     compile "io.jsonwebtoken:jjwt:${jjwt_version}"
     compile "org.postgresql:postgresql"
     compile "org.mapstruct:mapstruct-jdk8:${mapstruct_version}"
-    compile "nc.opt.core.kafka:opt-kafka:${opt_kafka_version}"
+   // compile "nc.opt.core.kafka:opt-kafka:${opt_kafka_version}"
     testCompile "org.awaitility:awaitility:${awaitility_version}"
     testCompile "com.jayway.jsonpath:json-path"
     testCompile ("org.springframework.boot:spring-boot-starter-test") {
@@ -208,7 +208,7 @@ dependencies {
         exclude group: 'com.vaadin.external.google', module: 'android-json'
     }
     //jhipster-needle-gradle-dependency - JHipster will add additional dependencies here
-    compile "nc.opt.core.search:opt-elasticsearch:${opt_elasticsearch_version}"
+  //  compile "nc.opt.core.search:opt-elasticsearch:${opt_elasticsearch_version}"
 }
 
 clean {
