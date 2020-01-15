@@ -25,7 +25,7 @@ jobs:
             - name: Run backend test
               run: |
                   chmod +x gradlew
-                  ./gradlew clean test integrationTest -x webpack
+                  ./gradlew clean test -x webpack
             - name: Run frontend test
               run: yarn run test
             - name: Analyze code with SonarQube
@@ -39,4 +39,4 @@ jobs:
                       echo No SONAR_TOKEN, skipping...
                   fi
             - name: Package application
-              run: ./gradlew bootJar -Pprod -x test -x integrationTest
+              run: ./gradlew bootJar -Pprod -x test
