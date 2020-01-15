@@ -39,4 +39,4 @@ jobs:
                       echo No SONAR_TOKEN, skipping...
                   fi
             - name: Package application
-              run: ./gradlew bootJar -Pprod -x test
+              run: ./gradlew bootWar -Pprod -x test
