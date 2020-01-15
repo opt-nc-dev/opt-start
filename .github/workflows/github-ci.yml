@@ -41,7 +41,7 @@ jobs:
             - name: Package application
               run: ./gradlew bootRepackage -Pprod -x test
             - name: Publish to GitHub Packages
-                  run: ./gradlew publish
-                  env:
-                      USERNAME: ${{ github.actor }}
-                      PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+              run: gradle publish
+              env:
+                  USERNAME: ${{ github.actor }}
+                  PASSWORD: ${{ secrets.GITHUB_TOKEN }}
