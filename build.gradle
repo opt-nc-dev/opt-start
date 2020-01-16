@@ -238,7 +238,7 @@ task cleanResources(type: Delete) {
     delete 'build/resources'
 }
 
-task wrapper(type: Wrapper) {
+wrapper {
     gradleVersion = '4.0'
 }
 
